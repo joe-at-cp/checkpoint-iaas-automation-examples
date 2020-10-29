@@ -1,8 +1,14 @@
 #cloud-config
 
+#The cpusers stanza sets the passwords for new or existing accounts. admin and expert are existing user accounts that can be set. 
+#Adding additional users and even ssh keys can be done by expanding the list to include those users.
+
 cpusers:
  - name: admin
-   shell: /bin/bash
    password-hash: $1$qgtM4UZV$BcvrMm3cQ/oJIiyaoXKCY.
  - name: expert
    password-hash: $1$qgtM4UZV$BcvrMm3cQ/oJIiyaoXKCY.
+ - name: joe
+   password-hash: $1$qgtM4UZV$BcvrMm3cQ/oJIiyaoXKCY.
+   ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCv...... bob@dev

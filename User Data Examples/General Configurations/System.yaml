@@ -1,5 +1,8 @@
 #cloud-config
 
+#The system stanza is used to configure basic Gaia OS parameters on first boot. Some parameters are geared toward gateways only, like netflow.
+#See the master example for more info.
+
 system:
   hostname: automation
   domainname: example.com

@@ -1,5 +1,7 @@
 #cloud-config
 
+#ssh keys stanza is used to include ssh keys to the default admin account of the Gaia OS.
+
 ssh_authorized_keys:
 - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvuI0ak24Z/Kldjmh+ETI7mdOjmDLH7HB/i0... dev@dev
 - ssh-rsa AAAAB3NzaC1yc2EABBBDAQABAAABAQCvuI0ak24Z/Kldjmh+EIGF7sdfdOjmDLH7HB/i0... bill@dev
