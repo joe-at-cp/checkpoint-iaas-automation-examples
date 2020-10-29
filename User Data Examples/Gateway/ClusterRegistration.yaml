@@ -1,0 +1,28 @@
+#cloud-config
+
+register:
+  sms:
+    ip-address: 10.200.1.24
+    api-key: WexRH62STmrm9SObXnphRQ==
+    cluster:
+      name: MyCluster
+      mode: cluster-xl-ha
+      ip-address: 10.200.1.200
+      cluster-interfaces:
+        - name: "eth0"
+          ip-address: 10.200.1.200
+          network-mask: 255.255.0.0
+          type: cluster
+          anti-spoofing: "false"
+          topology: "external"
+        - name: "eth1"
+          ip-address: 10.100.0.200
+          network-mask: 255.255.0.0
+          type: "cluster + sync"
+          anti-spoofing: "false"  
+          topology: "internal"
+    gateway:
+      sic: vpn123
+    policy:
+      install-policy: true
+      policy-name: Standard

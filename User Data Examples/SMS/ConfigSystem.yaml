@@ -1,0 +1,21 @@
+#cloud-config
+
+config_system:
+  configure: "true"
+  hostname: SMS
+  mgmt_admin_name: "admin"
+  mgmt_admin_passwd: "vpn123"
+  mgmt_gui_clients_radio: any
+  install_security_managment: "true"
+  install_security_gw: "false"
+  install_mgmt_primary: "true"
+  install_mgmt_secondary: "false"
+  download_info: "true"
+  upload_info: "true"
+  primary: 1.1.1.1
+  secondary: 8.8.8.8
+  tertiary: 4.2.2.1
+  ntp_primary: ntp.checkpoint.com
+  ntp_primary_version: 4
+  ntp_secondary: ntp2.checkpoint.com
+  ntp_secondary_version: 4

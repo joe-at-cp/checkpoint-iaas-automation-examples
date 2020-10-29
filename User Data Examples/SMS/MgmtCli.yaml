@@ -1,0 +1,7 @@
+#cloud-config
+
+mgmtcli:
+  - add host name APIHost1 ip-address 1.2.3.4 
+  - add host name APIHost2 ip-address 12.22.32.24 
+  - set access-rule name "Cleanup Rule" layer "Network" action "Accept" track "Log"
+  - set api-settings accepted-api-calls-from "All IP addresses" --domain 'System Data'

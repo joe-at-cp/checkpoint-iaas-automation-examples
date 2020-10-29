@@ -1,0 +1,13 @@
+#cloud-config
+
+register:
+  sms:
+    ip-address: 10.200.1.24
+    api-key: I3YkeSy1JWN6femghzqXqw==
+    gateway:
+      name: MyGatewayObject
+      sic: vpn123
+      mgmt-if: eth0
+    policy:
+      install-policy: true
+      policy-name: Standard

@@ -1,0 +1,8 @@
+#cloud-config
+
+cpusers:
+ - name: admin
+   shell: /bin/bash
+   password-hash: $1$qgtM4UZV$BcvrMm3cQ/oJIiyaoXKCY.
+ - name: expert
+   password-hash: $1$qgtM4UZV$BcvrMm3cQ/oJIiyaoXKCY.
