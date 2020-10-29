@@ -1,0 +1,8 @@
+#cloud-config
+
+blink_config:
+  configure: true
+  gateway_cluster_member: false
+  download_info: true
+  upload_info: true
+  ftw_sic_key: vpn123

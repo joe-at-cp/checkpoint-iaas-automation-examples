@@ -1,0 +1,21 @@
+#cloud-config
+
+system:
+  hostname: automation
+  domainname: example.com
+  dns1: 1.1.1.1
+  dns2: 8.8.8.8
+  dns3: 4.2.2.1
+  ntp1:
+    address: ntp.checkpoint.com
+    version: 4
+  ntp2:
+    address: ntp2.checkpoint.com
+    version: 4
+  syslog:             
+      - logserver: 10.200.0.185 
+        level: all
+  netflow:
+    collector: 172.25.25.25
+    port: 1234
+    format: Netflow_V9
